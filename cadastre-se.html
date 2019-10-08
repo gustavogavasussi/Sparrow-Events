@@ -71,29 +71,80 @@
                         <div class="col-sm-9">
                             <form>
                                 <div class="form-group row">
-                                    <label for="nome" class="col-sm-2 col-form-label">Nome</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="Nome">
-                                    </div>
+                                    <label for="Nome">Nome</label>
+                                    <input type="text" class="form-control" id="Nome">
                                 </div>
                                 <div class="form-group row">
-                                        <label for="dataNascimento" class="col-sm-2 col-form-label">Data Nascimento</label>
-                                        <div class="col-sm-10">
-                                            <input type="date" class="form-control" id="dataNascimento">
-                                        </div>
+                                    <label for="dataNascimento">Data Nascimento</label>
+                                    <input type="date" class="form-control" id="dataNascimento">
+                                </div>
+                                <div class="form-group row">
+                                    <label>Sexo</label>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1">Masculino</label>
                                     </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline2">Feminino</label>
+                                    </div>
+                                    </label>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="formacao">Formação</label>
+                                    <select class="form-control" id="formacao">
+                                        <option></option>
+                                        <option>Ensino Fundamental</option>
+                                        <option>Ensino Medio</option>
+                                        <option>Ensino Superior</option>
+                                    </select>
+                                    <label for="profissao">Profissão</label>
+                                    <select class="form-control" id="profissao">
+                                        <option>
+                                        <option>Analista de Sistemas</option>
+                                        <option>Dev. FrontEnd</option>
+                                        <option>Dev. BackEnd</option>
+                                        <option>Dev. FullStack</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="cpf">CPF</label>
+                                    <input type="text" class="form-control" id="cpf">
+                                </div>
                             </form>
                         </div>
                     </div>
                 </fieldset>
             </div>
         </div>
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
+        <div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Título do modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Texto do corpo do modal, é aqui.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
